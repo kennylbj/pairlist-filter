@@ -12,8 +12,7 @@ const api = got.extend({
         port: 1081,
       },
     }),
-  },
-  */
+  },*/
 });
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -63,7 +62,7 @@ export const blacklist = async () => {
       result.push(standardPairName);
     }
     index += 1;
-    sleep(500);
+    await sleep(200);
   }
   return result;
 };

@@ -29,13 +29,17 @@ $ npm run stop:pm2
 
 ## Usage
 
+Add RemotePairList to pairlists and set as blacklist mode
+
 ```json
 "pairlists": [
     {
         "method": "RemotePairList",
         "mode": "blacklist",
-        "pairlist_url": "file:///pairs/blacklist_gateio.json",
+        "pairlist_url": "http://127.0.0.1:3000/blacklist/gateio",
+        "number_assets": 10,
         "refresh_period": 1800,
+        "read_timeout": 60,
         "keep_pairlist_on_failure": true,
     }
 ]
