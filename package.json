@@ -1,0 +1,24 @@
+{
+  "name": "pairlist-filter",
+  "version": "1.0.0",
+  "description": "a pairlist filter to generate whitelist or blacklist for freqtrade",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:pm2": "pm2 start src/index.js --name pairlist-filter",
+    "stop:pm2": "pm2 stop pairlist-filter",
+    "ls": "pm2 list",
+    "logs": "pm2 logs"
+  },
+  "keywords": [
+    "pairlist"
+  ],
+  "author": "kennyliu",
+  "license": "MIT",
+  "dependencies": {
+    "got": "^14.4.3",
+    "node-schedule": "^2.1.1",
+    "tunnel": "^0.0.6"
+  }
+}
