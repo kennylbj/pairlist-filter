@@ -34,7 +34,9 @@ const server = http.createServer(async (req, res) => {
 });
 
 // start the server
-server.listen(3000, "127.0.0.1", async () => {
+// 0.0.0.0 for docker
+// 127.0.0.1 without docker
+server.listen(3000, "0.0.0.0", async () => {
   console.log("Http server started");
 });
 

@@ -46,7 +46,7 @@ export const whitelist = async () => {
 };
 
 export const blacklist = async () => {
-  const pairlist = await fetchList(120);
+  const pairlist = await fetchList(150);
   const result = [];
   let index = 0;
   for (const pair of pairlist) {
