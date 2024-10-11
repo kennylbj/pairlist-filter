@@ -2,7 +2,9 @@ import got from "got";
 import tunnel from "tunnel";
 
 const MIN_CAP_IN_MILLION = 30;
+
 const api = got.extend({
+  /*
   agent: {
     https: tunnel.httpsOverHttp({
       proxy: {
@@ -11,6 +13,7 @@ const api = got.extend({
       },
     }),
   },
+  */
 });
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));

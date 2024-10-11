@@ -4,7 +4,7 @@
 
 ## Description
 
-Pairlist filter for freqtrade
+A pairlist filter to generate whitelist or blacklist for freqtrade
 
 ## Installation
 
@@ -12,7 +12,7 @@ Pairlist filter for freqtrade
 $ npm install
 ```
 
-## Running the app
+## Running
 
 ```bash
 
@@ -27,6 +27,20 @@ $ npm run stop:pm2
 
 ```
 
+## Usage
+
+```json
+"pairlists": [
+    {
+        "method": "RemotePairList",
+        "mode": "blacklist",
+        "pairlist_url": "file:///pairs/blacklist_gateio.json",
+        "refresh_period": 1800,
+        "keep_pairlist_on_failure": true,
+    }
+]
+```
+
 ## Supported Exchanges
 
-* gate.io
+- gate.io
