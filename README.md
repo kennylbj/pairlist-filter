@@ -4,7 +4,7 @@
 
 ## Description
 
-A pairlist filter to generate whitelist or blacklist for freqtrade
+A pairlist filter to generate whitelist or blacklist for Freqtrade
 
 ## Installation
 
@@ -25,11 +25,15 @@ $ npm run start:pm2
 # production mode
 $ npm run stop:pm2
 
+# docker compose
+$ docker compose build
+$ docker compose up -d
+
 ```
 
 ## Usage
 
-Add RemotePairList to pairlists and set as blacklist mode.
+Add RemotePairList to freqtrade's config and set it as blacklist mode.
 Use 172.17.0.1 if you are using docker, 127.0.0.1 otherwise.
 
 ```json

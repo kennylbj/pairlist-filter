@@ -4,15 +4,14 @@ import tunnel from "tunnel";
 const MIN_CAP_IN_MILLION = 30;
 
 const api = got.extend({
-  /*
   agent: {
     https: tunnel.httpsOverHttp({
       proxy: {
-        host: "127.0.0.1",
+        host: "172.17.0.1",
         port: 1081,
       },
     }),
-  },*/
+  },
 });
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));

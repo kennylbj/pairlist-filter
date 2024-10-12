@@ -1,0 +1,12 @@
+version: "3"
+services:
+  server:
+    build:
+      context: .
+      dockerfile: "./Dockerfile"
+    container_name: pairlist-filter
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+    command: ["pm2-runtime", "src/index.js", "--name", "pairlist-filter"]
