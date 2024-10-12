@@ -6,28 +6,31 @@
 
 A pairlist filter to generate whitelist or blacklist for Freqtrade
 
-## Installation
+## Installation (for native approach)
 
 ```bash
-$ npm install
+$ npm i
+$ npm i -g pm2
 ```
 
 ## Running
+
+Pairlist filter can be deployed by pm2 (native) or docker approach.
 
 ```bash
 
 # development
 $ npm run start
 
-# start with pm2
+# pm2 usage, please ensure pm2 is pre-installed
 $ npm run start:pm2
-
-# production mode
 $ npm run stop:pm2
+$ npm run logs:pm2
 
-# docker compose
+# docker compose usage
 $ docker compose build
 $ docker compose up -d
+$ docker compose down
 
 ```
 

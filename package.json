@@ -8,8 +8,8 @@
     "start": "node src/index.js",
     "start:pm2": "pm2 start src/index.js --name pairlist-filter",
     "stop:pm2": "pm2 stop pairlist-filter",
-    "ls": "pm2 list",
-    "logs": "pm2 logs"
+    "ls:pm2": "pm2 list",
+    "logs:pm2": "pm2 logs"
   },
   "keywords": [
     "pairlist"
